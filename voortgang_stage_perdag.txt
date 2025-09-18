@@ -1,0 +1,72 @@
+WEEK 1:
+1-9-2025
+Eerste dag, rondleiding gehad en andere werknemers ontmoet. Daarna onderzocht wat voorgaande studenten hebben gedaan aan "soortgelijke" projecten en hun documentatie door bekeken voor meer inzicht hoe het werkt. Daarna ben ik zelf ingedoken in de stof die mij is gegeven vanuit het bedrijf over de werking van sensoren, tevens een kleine introductie/demo gekregen over werking van de WPS (verplaatst naar morgen door ict problemen met installeren van programma's). Hiernaast heb ik een begin aan het project plan gemaakt en inmiddels bijna hoofdstuk 1 afgemaakt van het project plan. Hiernaast heb ik de eerste dag ook vooral gebruikt om te wennen aan het "bedrijfsleven"
+
+9:00 tot 17:00 uur = 8 uur
+
+2-9-2025
+Tweede dag, 8:30 ongeveer aangekomen daarna bezig gegaan met hoofdstuk 1 van mijn projectplan en tevens ook afgemaakt. Daarna ict gebeld om de programma's als vs en sql te installeren. Vervolgens met Roy besproken hoe we de opdracht kunnen doen waarbij de scope helder is aangezien de opdracht nog veelste breed was volgens Roel Westenberg en gaf aan dat in de eerste week de opdracht moest worden besproken. Hopelijke concrete opdracht omschrijving.
+
+8:30 tot 17:00 uur = 8,5 uur
+
+3-9-2025
+Weer met de ICT gebeld ,aangezien ze mij gisteren zouden bellen maar niet gebeurd. Programma's nog steeds niet kunnen installeren en bezig gegaan met documentatie. Met Roy overlegd over de MoSCoW die is gemaakt. Thuis gewerkt.
+
+9:00 tot 17:30 uur = 8,5 uur
+
+4-9-2025
+Alleen op kantoor, nog steeds geen programma's kunnen installeren dus bezig gegaan met documentatie. Halve dag kantoor halve dag thuis.
+
+9:00 tot 17:30 uur = 8,5 uur
+
+5-9-2025
+Programma's kunnen instaleren. Roy zal binnenkort de database laten zien en via daar kan ik echt beginnen met de inhoudelijke opdracht. Voor de rest ben ik  verder gegaan met de documentatie en ben ik weer een beetje in de stof gedoken over de sensoren zelf. 
+
+9:00 tot 17:30 uur = 8,5 uur
+
+
+WEEK 1 UREN TOTAAL= 39,5 UUR excl pauze 
+
+
+WEEK 2:
+8-9-2025
+Programma's geïnstalleerd dus als ik de database kan inzien kan ik beginnen met de opdracht. Voor de rest vooral bezig gegaan met het projectplan
+
+7:30 tot 16:00 uur = 8,5 uur
+
+9-9-2025
+Vanaf volgende week maandag definitief met de opdracht zelf beginnen nu bezig met projectplan.
+
+9:00 : 17:30 uur = 8,5 uur
+
+10-9-2025, 11-9-2025, 12-9-2025
+Vooral bezig geweest met het projectplan. Donderdag bezig gegaan met VUe.js ,want nog geen ervaring mee en basiskennis opgedaan om volgende week makkelijker te kunnen starten met de opdracht. Daarna Gantt chart gemaakt. 
+
+woensdag thuis: 9:00 tot 17:30 = 8,5 uur
+donderdag thuis: 9:00 tot 17:30 = 8,5 uur
+vrijdag kantoor= 8:00 tot 16:15 = 8,25 uur
+
+WEEK 2 UREN TOTAAL= 39,75 UUR excl pauze
+
+15-9-2025
+Bezig gegaan met logica proberen te vinden met de database om de opdracht te doen. Al eerste soort van algoritme gemaakt.
+
+8:30 tot 17:00 = 8,5 uur
+
+16-9-2025
+Verder bezig gegaan met de algoritme en het een beetje verbinden met vue js. Heb een JSON format uit de c# gegenereerd om die vervolgens te kunnen gebruiken in front end 
+
+8:30 tot 17:00 = 8,5 uur
+
+
+
+
+
+
+
+
+
+
+
+
+
