@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj": {}
+    "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj": {
+    "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
+        "projectUniqueName": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
         "projectName": "assenteller",
-        "projectPath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
+        "projectPath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
         "packagesPath": "C:\\Users\\akaraka1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\obj\\",
+        "outputPath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[2025.9.107, )"
+            },
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.12.3, )"

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace assenteller
 {
-    internal class data
+    public class data
     {
         public string Received { get; set; }
         public string DevEUI { get; set; }
