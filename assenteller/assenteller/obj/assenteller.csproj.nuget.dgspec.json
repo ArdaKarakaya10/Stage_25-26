@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj": {}
+    "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj": {
+    "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
+        "projectUniqueName": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
         "projectName": "assenteller",
-        "projectPath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
+        "projectPath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
         "packagesPath": "C:\\Users\\akaraka1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\obj\\",
+        "outputPath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

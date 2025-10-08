@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c7/m2TtUd/I=",
+  "dgSpecHash": "NKjY6DNStdU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
+  "projectFilePath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akaraka1\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\akaraka1\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
@@ -130,9 +130,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'HtmlAgilityPack.CssSelectors 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
+      "projectPath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\akaraka1\\Stage_25-26\\assenteller\\assenteller\\assenteller.csproj",
+      "filePath": "C:\\Users\\akaraka1\\source\\repos\\assenteller\\assenteller\\assenteller.csproj",
       "libraryId": "HtmlAgilityPack.CssSelectors",
       "targetGraphs": [
         "net8.0"

@@ -28,7 +28,7 @@ namespace assenteller
             
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM dbo.WheelPassingMeasurements";
+                string query = "SELECT * FROM dbo.WheelPassingMeasurements WHERE Timestamp > '2025-10-08 13:01:10.0000000'";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataReader reader = cmd.ExecuteReader();
