@@ -8,8 +8,21 @@ using System.Threading.Tasks;
 
 namespace assenteller
 {
+
     public class ExcelHandler
     {
+       
+        const int dev901 =78;
+        const int dev902 =63;
+        const int dev903 =70;
+        const int dev904 =71;
+        const int dev905 =69;
+        const int dev906 =74;
+        const int dev907 =75;
+        const int dev908 =77;
+        const int dev909 =73;
+        const int dev910L =67;
+        const int dev910R =66;
         public void Export(List<data> sensors, List<data_wps> wpsData, List<data_wps> AxlesData)
         {
 
@@ -29,7 +42,7 @@ namespace assenteller
             int axles901 = 0;
 
             int spoor902_904 = 0;
-            int spoor902_910N = 0;
+            int spoor902_910N = 6;
             int axles902 = 0;
 
             int spoor903_905 = 0;
@@ -37,30 +50,30 @@ namespace assenteller
             int axles903 = 0;
 
             int spoor904_907 = 0;
-            int spoor904_E = 0;
+            int spoor904_E = 6;
             int axles904 = 0;
 
             int spoor905_910Z = 0;
-            int spoor905_C = 0;
+            int spoor905_C = 9;
             int axles905 = 0;
 
-            int spoor906_B = 0;
+            int spoor906_B = 12;
             int spoor906_908 = 0;
             int axles906 = 0;
 
             int spoor907_909 = 0;
-            int spoor907_F = 0;
+            int spoor907_F = 8;
             int axles907 = 0;
 
-            int spoor908_A = 0;
-            int spoor908_X = 0;
+            int spoor908_A = 8;
+            int spoor908_X = 6;
             int axles908 = 0;
 
-            int spoor909_H = 0;
+            int spoor909_H = 6;
             int spoor909_G = 0;
             int axles909 = 0;
 
-            int spoor910_D = 0;
+            int spoor910_D = 8;
             int axles910_N = 0;
             int axles910_Z = 0;
 
@@ -103,7 +116,8 @@ namespace assenteller
             worksheet.Cell(row, 19).Value = "WPS908";
             worksheet.Cell(row, 20).Value = "WPS909";
             worksheet.Cell(row, 21).Value = "WPS910Z";
-            worksheet.Cell(row, 24).Value = "Tijd";
+            worksheet.Cell(row, 22).Value = "WPS910N";
+            worksheet.Cell(2, 24).Value = "Assen";
             worksheet.Cell(row, 25).Value = "901-902";
             worksheet.Cell(row, 26).Value = "902-904";
             worksheet.Cell(row, 27).Value = "902-910";
@@ -122,6 +136,7 @@ namespace assenteller
             worksheet.Cell(row, 40).Value = "908-A";
             worksheet.Cell(row, 41).Value = "908-X";
             worksheet.Cell(row, 42).Value = "910-D";
+            worksheet.Cell(row, 43).Value = "909-G";
 
 
             // Wisselstand sensor deel in excel
@@ -257,67 +272,67 @@ namespace assenteller
             {
                 switch (msg.DeviceID)
                 {
-                    case 66:
+                    case dev901:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 12).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 75:
+                    case dev902:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 13).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 74:
+                    case dev903:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 14).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 69:
+                    case dev904:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 15).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 72:
+                    case dev905:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 16).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 68:
+                    case dev906:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 17).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 63:
+                    case dev907:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 18).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 71:
+                    case dev908:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 19).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 73:
+                    case dev909:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 20).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 67:
+                    case dev910L:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 21).Value = $"{msg.TotalAxles}{msg.Direction}";
                         tijd_WPS.Add(msg);
                         break;
-                    case 70:
+                    case dev910R:
                         row1++;
                         worksheet.Cell(row1, 11).Value = msg.Timestamp;
                         worksheet.Cell(row1, 22).Value = $"{msg.TotalAxles}{msg.Direction}";
@@ -340,7 +355,7 @@ namespace assenteller
                 string richting = "N";
 
                 // Juiste device vinden
-                if (wps_message.DeviceID == 66)
+                if (wps_message.DeviceID == dev901)
                 {
 
                     for (int i = 0; i < tijd_ws1.Count - 1; i++)
@@ -348,6 +363,7 @@ namespace assenteller
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws1[i];
                         var tijd_next = tijd_ws1[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -358,8 +374,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles901 = wps_message.TotalAxles;
                             break;
@@ -371,7 +388,7 @@ namespace assenteller
                             // Bepalen waar assen opgeteld moeten worden - R
                             if (richting[4] == '0')
                             {
-                                spoor901_902 += axles901;
+                            spoor901_902 += axles901;
                             }
                             else
                             {
@@ -396,13 +413,15 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 75)
+                else if (wps_message.DeviceID == dev902)
                 {
+
                     for (int i = 0; i < tijd_ws2.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws2[i];
                         var tijd_next = tijd_ws2[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -413,8 +432,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles902 = wps_message.TotalAxles;
                             break;
@@ -453,13 +473,14 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 69)
+                else if (wps_message.DeviceID == dev904)
                 {
                     for (int i = 0; i < tijd_ws4.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws4[i];
                         var tijd_next = tijd_ws4[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -470,8 +491,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles904 = wps_message.TotalAxles;
                             break;
@@ -509,13 +531,14 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 63)
+                else if (wps_message.DeviceID == dev907)
                 {
                     for (int i = 0; i < tijd_ws7.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws7[i];
                         var tijd_next = tijd_ws7[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -526,8 +549,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles907 = wps_message.TotalAxles;
                             break;
@@ -565,13 +589,14 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 73)
+                else if (wps_message.DeviceID == dev909)
                 {
                     for (int i = 0; i < tijd_ws9.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws9[i];
                         var tijd_next = tijd_ws9[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -582,8 +607,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles909 = wps_message.TotalAxles;
                             break;
@@ -623,27 +649,31 @@ namespace assenteller
                     }
                 
 
-                else if (wps_message.DeviceID == 74)
+                else if (wps_message.DeviceID == dev903)
                 {
                     //andere ook for apart doen want kan zo zijn dat zelfs bij else if de next nieuwe is bij tweede iteratie i+1 en dan stopt de programma bij een gehele for loop
                     for (int i = 0; i < tijd_ws3.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
+                        var tijd_eerste = tijd_ws3[0];
                         var tijd = tijd_ws3[i];
                         var tijd_next = tijd_ws3[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
-                        if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
+                        if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_eerste.Received))
                         {
                             // richting en assen bepalen
-                            richting = tijd.IO;
+                            richting = tijd_eerste.IO;
                             axles903 = wps_message.TotalAxles;
                             break;
                         }
 
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
+
                             richting = tijd_next.IO;
                             axles903 = wps_message.TotalAxles;
                             break;
@@ -681,13 +711,14 @@ namespace assenteller
                     }
                 }
 
-                else if (wps_message.DeviceID == 72)
+                else if (wps_message.DeviceID == dev905)
                 {
                     for (int i = 0; i < tijd_ws5.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws5[i];
                         var tijd_next = tijd_ws5[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -698,8 +729,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles905 = wps_message.TotalAxles;
                             break;
@@ -739,13 +771,14 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 68)
+                else if (wps_message.DeviceID == dev906)
                 {
                     for (int i = 0; i < tijd_ws6.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws6[i];
                         var tijd_next = tijd_ws6[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -756,8 +789,9 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
                             richting = tijd_next.IO;
                             axles906 = wps_message.TotalAxles;
                             break;
@@ -795,13 +829,14 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 71)
+                else if (wps_message.DeviceID == dev908)
                 {
                     for (int i = 0; i < tijd_ws8.Count - 1; i++)
                     {
                         // Juiste tijd van wisselstand vinden
                         var tijd = tijd_ws8[i];
                         var tijd_next = tijd_ws8[i + 1];
+                        var marge = TimeSpan.FromSeconds(2);
 
                         // Tijd bepalen als de laatste WPS sensor nieuwer is dan laatste wisselstand tijd
                         if (DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd.Received))
@@ -812,8 +847,10 @@ namespace assenteller
                             break;
                         }
                         // Tijd bepalen als wps tijd ergens tussen de wisselstand sensor waardes zit
-                        else if (DateTime.Parse(wps_message.Timestamp) < DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) > DateTime.Parse(tijd_next.Received))
+                        else if (DateTime.Parse(wps_message.Timestamp) <= DateTime.Parse(tijd.Received) && DateTime.Parse(wps_message.Timestamp) >= DateTime.Parse(tijd_next.Received))
                         {
+                            
+
                             richting = tijd_next.IO;
                             axles908 = wps_message.TotalAxles;
                             break;
@@ -852,22 +889,41 @@ namespace assenteller
                         }
                     }
                 
-                else if (wps_message.DeviceID == 70 || wps_message.DeviceID == 67)
+                else if (wps_message.DeviceID == dev910R || wps_message.DeviceID == dev910L)
                 {
-                    if (wps_message.DeviceID == 70)
+                    if (wps_message.DeviceID == dev910R)
                     {
-                        axles910_N = wps_message.TotalAxles;
-                        spoor902_910N -= axles910_N;
-                        spoor910_D += axles910_N;
+                        if (wps_message.Direction == "L")
+                        {
+                            axles910_N = wps_message.TotalAxles;
+                            spoor902_910N -= axles910_N;
+                            spoor910_D += axles910_N;
+                        }
+                        else
+                        {
+                            axles910_N = wps_message.TotalAxles;
+                            spoor910_D -= axles910_N;
+                            spoor902_910N += axles910_N;
+                        }
                     }
                     else
                     {
-                        axles910_Z = wps_message.TotalAxles;
-                        spoor905_910Z -= axles910_Z;
-                        spoor910_D += axles910_Z;
+                        if (wps_message.Direction == "L")
+                        {
+                            axles910_Z = wps_message.TotalAxles;
+                            spoor905_910Z -= axles910_Z;
+                            spoor910_D += axles910_Z;
+                        }
+                        else
+                        {
+                            axles910_Z = wps_message.TotalAxles;
+                            spoor910_D -= axles910_Z;
+                            spoor905_910Z += axles910_Z;
+                        }
                     }
                 }
                 worksheet.Cell(2, 26).Value = spoor903_905;
+
             }
             // Na alle loops en berekeningen
                 worksheet.Cell(2, 25).Value = spoor901_902;
@@ -888,6 +944,7 @@ namespace assenteller
                 worksheet.Cell(2, 40).Value = spoor908_A;
                 worksheet.Cell(2, 41).Value = spoor908_X;
                 worksheet.Cell(2, 42).Value = spoor910_D;
+                worksheet.Cell(2, 43).Value = spoor909_G;
 
             workbook.SaveAs(@"C:\Users\akaraka1\source\repos\assenteller\event.xlsx");
 

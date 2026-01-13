@@ -24,7 +24,7 @@ namespace assenteller
             var result = new List<data>();
             using (SqlConnection connection = new SqlConnection(servername))
             {
-                string query = "SELECT *\r\nFROM [IotMessages].[dbo].[TraceMeMessages]\r\nWHERE Received>'2025-01-28 09:43:17.827'";
+                string query = "SELECT * FROM [IotMessages].[dbo].[TraceMeMessages]WHERE Received>'2-12-2025  13:53:05'";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataReader reader = cmd.ExecuteReader();

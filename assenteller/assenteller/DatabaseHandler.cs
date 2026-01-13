@@ -28,7 +28,7 @@ namespace assenteller
             
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM dbo.WheelPassingMeasurements WHERE Timestamp > '2025-10-08 13:01:10.0000000'";
+                string query = "SELECT * FROM dbo.WheelPassingMeasurements   where Timestamp='2025-12-15 07:47:16.0000000'";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(query, connection);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -43,6 +43,7 @@ namespace assenteller
                         Direction = Convert.ToString(reader["Direction"]),
                     });
                 }
+                
                 result.Reverse();
             }
             return result;
